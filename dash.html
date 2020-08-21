@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+
+
+
+    <style>
+        body {
+            background-color: #4e2344;
+        }
+        
+        .nopadding {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <div class="row">
+                <div class="col-12 nopadding">
+                    <img src="img/dash-1.png" alt="logo" class="w-100">
+                </div>
+            </div>
+            <div class="row" style="background-color: #2c5534;">
+                <div class="col-4 nopadding"><img src="img/dash-2.png" alt="logo" class="w-100"></div>
+                <div class="col-4 nopadding">
+                    <a href="coins.html"><img src="img/dash-3.png" alt="logo" class="w-100"></a>
+                </div>
+                <div class="col-4 nopadding">
+                    <a href="wallet.html"><img src="img/dash-4.png" alt="logo" class="w-100"></a>
+                </div>
+            </div>
+            <div class="row" style="background-color: #39413a">
+                <div class="col-8 nopadding">
+                    <img src="img/dash-5.png" alt="logo" class="w-100"></a>
+                </div>
+                <div class="col-4 nopadding">
+                    <a href="scratch.html"><img src="img/dash-6.png" alt="logo" class="w-100"></a>
+                </div>
+            </div>
+            <div class="row" style="background-color: #39413a">
+                <div class="col-4 nopadding">
+                    <a href="spin.html"><img src="img/dash-7.png" alt="logo" class="w-100"></a>
+                </div>
+                <div class="col-8 nopadding"><img src="img/dash-8.png" alt="logo" class="w-100"></div>
+            </div>
+            <div class="row">
+                <div class="col-12 nopadding">
+                    <img data-toggle="modal" data-target="#xModal" src="img/dash-11.png" alt="logo" class="w-100">
+                    <img src="img/dash-10.png" alt="logo" class="w-100">
+                </div>
+                <div class="col-12 nopadding">
+                    <a href="https://spin-admin.ingeniousng.com/" class="btn-sm btn-danger">Go To Admin</a>
+                </div>
+            </div>
+        </center>
+    </div>
+    <!-- /.container-->
+
+
+
+    <div id="xModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <video id="myVideo" width="100%" controls autoplay>
+                        <source src="video/video.mp4" type="video/mp4">
+                        Your mobile device does not support HTML video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="background-color: #328bc0;">
+                    <a href="dash.html">
+                        <img src="img/video-ads.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript'>
+        document.getElementById('myVideo').addEventListener('ended', myHandler, false);
+
+        function myHandler(e) {
+
+            $('#myModal').modal('show');
+
+            // What you want to do after the event
+        }
+    </script>
+</body>
+
+</html>

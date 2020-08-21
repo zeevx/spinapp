@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #4e2544;
+        }
+    </style>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="">
+        <center>
+            <div style="background-color: #3a752a;">
+                <img src="img/coins-4.png" alt="logo" class="img-fluid">
+                <img data-toggle="modal" data-target="#xxModal" src="img/coins-3.png" alt="logo" class="img-fluid">
+                <img src="img/coins-5.png" alt="logo" class="img-fluid">
+            </div>
+            <img data-toggle="modal" data-target="#xModal" src="img/coins-2.png" alt="logo" class="img-fluid">
+        </center>
+    </div>
+    <!-- /.container-->
+
+
+
+    <div id="xModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <video id="myVideo" width="100%" controls autoplay>
+                        <source src="video/video.mp4" type="video/mp4">
+                        Your mobile device does not support HTML video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="background-color: #328bc0;">
+                    <a href="dash.html">
+                        <img src="img/video-ads.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="xxModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="background-color: #328bc0;">
+                    <a href="dash.html">
+                        <img src="img/coins-alert.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript'>
+        document.getElementById('myVideo').addEventListener('ended', myHandler, false);
+
+        function myHandler(e) {
+
+            $('#myModal').modal('show');
+
+            // What you want to do after the event
+        }
+    </script>
+</body>
+
+</html>
